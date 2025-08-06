@@ -1,0 +1,12 @@
+C:\Users\admin\Desktop\CustomerManagementApp\CustomerManagement.Core\bin\Debug\net8.0\CustomerManagement.Core.deps.json
+C:\Users\admin\Desktop\CustomerManagementApp\CustomerManagement.Core\bin\Debug\net8.0\CustomerManagement.Core.dll
+C:\Users\admin\Desktop\CustomerManagementApp\CustomerManagement.Core\bin\Debug\net8.0\CustomerManagement.Core.pdb
+C:\Users\admin\Desktop\CustomerManagementApp\CustomerManagement.Core\obj\Debug\net8.0\CustomerManagement.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\CustomerManagementApp\CustomerManagement.Core\obj\Debug\net8.0\CustomerManagement.Core.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\CustomerManagementApp\CustomerManagement.Core\obj\Debug\net8.0\CustomerManagement.Core.AssemblyInfo.cs
+C:\Users\admin\Desktop\CustomerManagementApp\CustomerManagement.Core\obj\Debug\net8.0\CustomerManagement.Core.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\CustomerManagementApp\CustomerManagement.Core\obj\Debug\net8.0\CustomerManagement.Core.sourcelink.json
+C:\Users\admin\Desktop\CustomerManagementApp\CustomerManagement.Core\obj\Debug\net8.0\CustomerManagement.Core.dll
+C:\Users\admin\Desktop\CustomerManagementApp\CustomerManagement.Core\obj\Debug\net8.0\refint\CustomerManagement.Core.dll
+C:\Users\admin\Desktop\CustomerManagementApp\CustomerManagement.Core\obj\Debug\net8.0\CustomerManagement.Core.pdb
+C:\Users\admin\Desktop\CustomerManagementApp\CustomerManagement.Core\obj\Debug\net8.0\ref\CustomerManagement.Core.dll

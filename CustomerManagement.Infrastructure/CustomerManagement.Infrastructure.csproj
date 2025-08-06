@@ -1,6 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="9.23.90" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CustomerManagement.Core\CustomerManagement.Core.csproj" />
   </ItemGroup>
 

@@ -22,6 +22,7 @@ namespace CustomerManagement.Infrastructure.Repositories
         {
             _context.Customers.Add(customer); 
             await _context.SaveChangesAsync(); // save the new customer to the database
+            Console.WriteLine($"Customer {customer.Name} saved with ID {customer.Id}");
         }
     }
 }

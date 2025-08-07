@@ -10,7 +10,8 @@ using CustomerManagement.Core.Interfaces;
 namespace CustomerManagement.Core.Services
 {
     public class CustomerService : ICustomerService
-    {
+    {   
+        // private field for the repository used to save and retrieve customers
         private readonly ICustomerRepository _customerRepository;
 
         public CustomerService(ICustomerRepository customerRepository)
@@ -27,7 +28,7 @@ namespace CustomerManagement.Core.Services
             if (string.IsNullOrWhiteSpace(customer.Email))
                 throw new ArgumentException("Email is required.");
 
-            // save the DataBase
+            // save the customer to the repository asynchronously
             await _customerRepository.AddCustomerAsync(customer);
         }
 

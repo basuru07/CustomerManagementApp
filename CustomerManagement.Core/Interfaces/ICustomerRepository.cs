@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 namespace CustomerManagement.Core.Interfaces
 {
     public interface ICustomerRepository
-    {
+    {   
         Task AddCustomerAsync(Customer customer);
+
         Task<List<Customer>> GetAllCustomersAsync();
 
         Task<Customer> GetCustomerByIdAsync(int id);

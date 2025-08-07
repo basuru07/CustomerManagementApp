@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CustomerManagement.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+264880f45fa83a7e5ea94762fd63f8ff472029c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d950d38c6a900592ca514e7f0a94d1e55d7295cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("CustomerManagement.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CustomerManagement.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

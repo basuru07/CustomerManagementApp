@@ -3,19 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement.API", "CustomerManagement.API\CustomerManagement.API.csproj", "{D027E958-B796-4F48-AC81-C53A2697E48D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerManagement.API", "CustomerManagement.API\CustomerManagement.API.csproj", "{D027E958-B796-4F48-AC81-C53A2697E48D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement.Core", "CustomerManagement.Core\CustomerManagement.Core.csproj", "{77D4A701-47C5-48DB-AF5E-59E6F3798B03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerManagement.Core", "CustomerManagement.Core\CustomerManagement.Core.csproj", "{77D4A701-47C5-48DB-AF5E-59E6F3798B03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement.Infrastructure", "CustomerManagement.Infrastructure\CustomerManagement.Infrastructure.csproj", "{196E3FF1-4450-4AE9-A459-85CB9BDA5E48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerManagement.Infrastructure", "CustomerManagement.Infrastructure\CustomerManagement.Infrastructure.csproj", "{196E3FF1-4450-4AE9-A459-85CB9BDA5E48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D027E958-B796-4F48-AC81-C53A2697E48D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +27,11 @@ Global
 		{196E3FF1-4450-4AE9-A459-85CB9BDA5E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{196E3FF1-4450-4AE9-A459-85CB9BDA5E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{196E3FF1-4450-4AE9-A459-85CB9BDA5E48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6ABA71BA-7E24-4EB6-ADE1-2BBC1A8A44BC}
 	EndGlobalSection
 EndGlobal

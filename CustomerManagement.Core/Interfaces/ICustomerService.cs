@@ -13,7 +13,6 @@ namespace CustomerManagement.Core.Interfaces
         Task <List<Customer>> GetAllCustomersAsync(); // list the all customer
         Task <Customer> GetCustomerByIdAsync(int id);
         Task <bool> DeleteCustomerAsync (int id);   // delete the customer by id  
-
-       Task <bool> UpdateCustomerAsync (int id,  Customer customer);
+        Task <bool> UpdateCustomerAsync (int id,  Customer customer);
     }
 }

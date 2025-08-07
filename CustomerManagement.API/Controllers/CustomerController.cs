@@ -11,6 +11,7 @@ namespace CustomerManagement.API.Controllers
     {
         private readonly ICustomerService _customerService;
 
+        // constructor injection of the customer service
         public CustomerController(ICustomerService customerService)
         {
             _customerService = customerService;
@@ -20,14 +21,14 @@ namespace CustomerManagement.API.Controllers
         [HttpPost("add")]
         public async Task<IActionResult> AddCustomer([FromBody] AddCustomerRequest request)
         {
-            // mapping DTO
+            // mapping DTO to the customer entity
             var customer = new Customer
             {
                 Name = request.Name,
                 Email = request.Email,
                 PhoneNumber = request.PhoneNumber
             };
-
+            // call the service method to save the new customer
             await _customerService.AddCustomerAsync(customer);
 
             return Ok(new
@@ -45,7 +46,7 @@ namespace CustomerManagement.API.Controllers
         // Read all Customers
         [HttpGet("all")]
         public async Task <IActionResult> GetAllCustomers()
-        {
+        {   // call the service to get all customer
             var customers = await _customerService.GetAllCustomersAsync();
             return Ok(customers);
         }
@@ -55,7 +56,7 @@ namespace CustomerManagement.API.Controllers
         public async Task<IActionResult> GetCustomerById(int id)
         {
             var customer = await _customerService.GetCustomerByIdAsync(id);
-
+            // if not found, return 404 error
             if (customer == null)
                 return NotFound($"Customer with ID {id} not found.");
 

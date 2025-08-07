@@ -4,17 +4,17 @@ using CustomerManagement.Infrastructure.Data;
 using CustomerManagement.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args); // 1. create the web app builder
 
-// Add services
+// Add services and repository 
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 
-// ✅ Use builder.Configuration to get config values like connection string
+// Use builder.Configuration to Oracle DB using the connection string from appsettings.json
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(); // enble [ApiController] support
 
 // Add Swagger/OpenAPI services
 builder.Services.AddEndpointsApiExplorer();
@@ -28,12 +28,12 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-var app = builder.Build();
+var app = builder.Build(); 
 
-// Configure the HTTP request pipeline
+// Configure the HTTP request pipeline (Middleware Configuration)
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
+    app.UseSwagger(); // enable Swagger docs
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Customer Management API v1");
@@ -42,8 +42,8 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-app.UseHttpsRedirection();
-app.UseAuthorization();
-app.MapControllers();
+app.UseHttpsRedirection(); // use secure HTTPS
+app.UseAuthorization(); // enable [Authorize] attributes
+app.MapControllers(); // map routes to controller endpoints
 
-app.Run();
+app.Run(); // start the web server

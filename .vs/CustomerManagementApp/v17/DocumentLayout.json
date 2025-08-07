@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\CustomerManagementApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D027E958-B796-4F48-AC81-C53A2697E48D}|CustomerManagement.API\\CustomerManagement.API.csproj|c:\\users\\admin\\desktop\\customermanagementapp\\customermanagement.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D027E958-B796-4F48-AC81-C53A2697E48D}|CustomerManagement.API\\CustomerManagement.API.csproj|solutionrelative:customermanagement.api\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D4A701-47C5-48DB-AF5E-59E6F3798B03}|CustomerManagement.Core\\CustomerManagement.Core.csproj|c:\\users\\admin\\desktop\\customermanagementapp\\customermanagement.core\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D4A701-47C5-48DB-AF5E-59E6F3798B03}|CustomerManagement.Core\\CustomerManagement.Core.csproj|solutionrelative:customermanagement.core\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{196E3FF1-4450-4AE9-A459-85CB9BDA5E48}|CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj|c:\\users\\admin\\desktop\\customermanagementapp\\customermanagement.infrastructure\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{196E3FF1-4450-4AE9-A459-85CB9BDA5E48}|CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj|solutionrelative:customermanagement.infrastructure\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D4A701-47C5-48DB-AF5E-59E6F3798B03}|CustomerManagement.Core\\CustomerManagement.Core.csproj|c:\\users\\admin\\desktop\\customermanagementapp\\customermanagement.core\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D4A701-47C5-48DB-AF5E-59E6F3798B03}|CustomerManagement.Core\\CustomerManagement.Core.csproj|solutionrelative:customermanagement.core\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77D4A701-47C5-48DB-AF5E-59E6F3798B03}|CustomerManagement.Core\\CustomerManagement.Core.csproj|c:\\users\\admin\\desktop\\customermanagementapp\\customermanagement.core\\interfaces\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77D4A701-47C5-48DB-AF5E-59E6F3798B03}|CustomerManagement.Core\\CustomerManagement.Core.csproj|solutionrelative:customermanagement.core\\interfaces\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CustomerManagementApp\\CustomerManagement.Core\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "CustomerManagement.Core\\Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\CustomerManagementApp\\CustomerManagement.Core\\Services\\CustomerService.cs",
+              "RelativeToolTip": "CustomerManagement.Core\\Services\\CustomerService.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowDkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T08:56:16.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CustomerManagementApp\\CustomerManagement.API\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "CustomerManagement.API\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\CustomerManagementApp\\CustomerManagement.API\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "CustomerManagement.API\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T08:39:34.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CustomerManagementApp\\CustomerManagement.Infrastructure\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "CustomerManagement.Infrastructure\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\CustomerManagementApp\\CustomerManagement.Infrastructure\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "CustomerManagement.Infrastructure\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAcwEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T08:40:37.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CustomerManagementApp\\CustomerManagement.Core\\Interfaces\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "CustomerManagement.Core\\Interfaces\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\CustomerManagementApp\\CustomerManagement.Core\\Interfaces\\ICustomerRepository.cs",
+              "RelativeToolTip": "CustomerManagement.Core\\Interfaces\\ICustomerRepository.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAQwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T08:46:33.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\CustomerManagementApp\\CustomerManagement.Core\\Interfaces\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "CustomerManagement.Core\\Interfaces\\ICustomerService.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\CustomerManagementApp\\CustomerManagement.Core\\Interfaces\\ICustomerService.cs",
+              "RelativeToolTip": "CustomerManagement.Core\\Interfaces\\ICustomerService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T08:51:14.129Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

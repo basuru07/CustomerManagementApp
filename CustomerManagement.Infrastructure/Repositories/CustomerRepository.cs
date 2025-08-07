@@ -43,9 +43,30 @@ namespace CustomerManagement.Infrastructure.Repositories
                 return false;
 
             _context.Customers.Remove(customer);
-            await _context.SaveChangesAsync(); // ✅ Fixed to async
+            await _context.SaveChangesAsync(); 
             return true;
         }
+
+        public async Task<bool> UpdateCustomerAsync(int id, Customer updatedCustomer)
+        {
+            var existingCustomer = await _context.Customers.FindAsync(id);
+
+            if (existingCustomer == null)
+                return false;
+
+            // Update fields
+            existingCustomer.Name = updatedCustomer.Name;
+            existingCustomer.Email = updatedCustomer.Email;
+            existingCustomer.PhoneNumber = updatedCustomer.PhoneNumber;
+
+            _context.Customers.Update(existingCustomer);
+            await _context.SaveChangesAsync(); 
+            return true;
+        }
+
+
+
+
     }
 
     

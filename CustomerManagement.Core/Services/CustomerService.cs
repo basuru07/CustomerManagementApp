@@ -45,6 +45,13 @@ namespace CustomerManagement.Core.Services
         {
             return await _customerRepository.DeleteCustomerAsync(id);
         }
+
+        public async Task<bool> UpdateCustomerAsync(int id, Customer updateCustomer)
+        {
+            return await _customerRepository.UpdateCustomerAsync(id, updateCustomer);
+
+        }
+
     }
 }
 

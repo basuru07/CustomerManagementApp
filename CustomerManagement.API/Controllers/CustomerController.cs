@@ -16,6 +16,7 @@ namespace CustomerManagement.API.Controllers
             _customerService = customerService;
         }
 
+        // Add the Customer 
         [HttpPost("add")]
         public async Task<IActionResult> AddCustomer([FromBody] AddCustomerRequest request)
         {
@@ -40,6 +41,8 @@ namespace CustomerManagement.API.Controllers
 
             
         }
+
+        // Read all Customers
         [HttpGet("all")]
         public async Task <IActionResult> GetAllCustomers()
         {
@@ -47,6 +50,7 @@ namespace CustomerManagement.API.Controllers
             return Ok(customers);
         }
 
+        // Read with Customer ID
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCustomerById(int id)
         {
@@ -58,7 +62,7 @@ namespace CustomerManagement.API.Controllers
             return Ok(customer);
         }
 
-
+        // Delete Part
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCustomer(int id)
         {
@@ -69,6 +73,21 @@ namespace CustomerManagement.API.Controllers
 
             return Ok($"Customer with ID {id} deleted successfully.");
         }
+
+        // Update Part
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateCustomer(int id, [FromBody] Customer updatedCustomer)
+        {
+            var result = await _customerService.UpdateCustomerAsync(id, updatedCustomer);
+
+            if (!result)
+                return NotFound($"Customer with ID {id} not found.");
+
+            return Ok($"Customer with ID {id} updated successfully.");
+
+
+        }
+
 
 
 

@@ -14,6 +14,6 @@ namespace CustomerManagement.Core.Interfaces
         Task <Customer> GetCustomerByIdAsync(int id);
         Task <bool> DeleteCustomerAsync (int id);   // delete the customer by id  
 
-       
+       Task <bool> UpdateCustomerAsync (int id,  Customer customer);
     }
 }

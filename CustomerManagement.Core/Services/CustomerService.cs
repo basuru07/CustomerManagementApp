@@ -35,6 +35,11 @@ namespace CustomerManagement.Core.Services
         {
             return await _customerRepository.GetAllCustomersAsync();
         }
+
+        public async Task<Customer> GetCustomerByIdAsync(int id)
+        {
+            return await _customerRepository.GetCustomerByIdAsync(id);
+        }
     }
 }
 

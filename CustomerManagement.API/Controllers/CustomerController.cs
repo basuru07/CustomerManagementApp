@@ -47,5 +47,17 @@ namespace CustomerManagement.API.Controllers
             return Ok(customers);
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetCustomerById(int id)
+        {
+            var customer = await _customerService.GetCustomerByIdAsync(id);
+
+            if (customer == null)
+                return NotFound($"Customer with ID {id} not found.");
+
+            return Ok(customer);
+        }
+
+
     }
 }

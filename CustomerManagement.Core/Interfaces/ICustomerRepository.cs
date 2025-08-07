@@ -11,6 +11,9 @@ namespace CustomerManagement.Core.Interfaces
     {
         Task AddCustomerAsync(Customer customer);
         Task<List<Customer>> GetAllCustomersAsync();
+
+        Task<Customer> GetCustomerByIdAsync(int id);
+
     }
 
 

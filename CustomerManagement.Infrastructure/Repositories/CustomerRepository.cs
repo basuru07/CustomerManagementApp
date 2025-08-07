@@ -30,5 +30,10 @@ namespace CustomerManagement.Infrastructure.Repositories
         {
             return await _context.Customers.ToListAsync();
         }
+        public async Task<Customer> GetCustomerByIdAsync(int id)
+        {
+            return await _context.Customers.FindAsync(id);
+        }
+
     }
 }

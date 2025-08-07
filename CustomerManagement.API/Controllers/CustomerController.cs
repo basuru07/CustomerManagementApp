@@ -18,7 +18,8 @@ namespace CustomerManagement.API.Controllers
 
         [HttpPost("add")]
         public async Task<IActionResult> AddCustomer([FromBody] AddCustomerRequest request)
-        {   // mapping DTO
+        {
+            // mapping DTO
             var customer = new Customer
             {
                 Name = request.Name,
@@ -27,8 +28,15 @@ namespace CustomerManagement.API.Controllers
             };
 
             await _customerService.AddCustomerAsync(customer);
-            return Ok(new { message = "Customer added successfully!" });
+
+            return Ok(new
+            {
+                message = "Customer added successfully!",
+                customerId = customer.Id, // Assuming the service sets the ID
+                customerName = customer.Name,
+                customerEmail = customer.Email,
+                createdAt = DateTime.UtcNow
+            });
         }
     }
 }
-

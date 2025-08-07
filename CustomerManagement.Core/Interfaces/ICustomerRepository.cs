@@ -10,5 +10,8 @@ namespace CustomerManagement.Core.Interfaces
     public interface ICustomerRepository
     {
         Task AddCustomerAsync(Customer customer);
+        Task<List<Customer>> GetAllCustomersAsync();
     }
+
+
 }

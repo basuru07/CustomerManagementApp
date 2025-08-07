@@ -30,6 +30,11 @@ namespace CustomerManagement.Core.Services
             // save the DataBase
             await _customerRepository.AddCustomerAsync(customer);
         }
+
+        public async Task<List<Customer>> GetAllCustomersAsync()
+        {
+            return await _customerRepository.GetAllCustomersAsync();
+        }
     }
 }
 

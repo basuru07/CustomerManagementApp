@@ -37,6 +37,15 @@ namespace CustomerManagement.API.Controllers
                 customerEmail = customer.Email,
                 createdAt = DateTime.UtcNow
             });
+
+            
         }
+        [HttpGet("all")]
+        public async Task <IActionResult> GetAllCustomers()
+        {
+            var customers = await _customerService.GetAllCustomersAsync();
+            return Ok(customers);
+        }
+
     }
 }

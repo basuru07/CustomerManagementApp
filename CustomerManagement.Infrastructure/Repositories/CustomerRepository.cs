@@ -35,5 +35,18 @@ namespace CustomerManagement.Infrastructure.Repositories
             return await _context.Customers.FindAsync(id);
         }
 
+        public async Task<bool> DeleteCustomerAsync(int id)
+        {
+            var customer = await _context.Customers.FindAsync(id);
+
+            if (customer == null)
+                return false;
+
+            _context.Customers.Remove(customer);
+            await _context.SaveChangesAsync(); // ✅ Fixed to async
+            return true;
+        }
     }
+
+    
 }

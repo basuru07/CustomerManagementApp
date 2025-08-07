@@ -40,6 +40,11 @@ namespace CustomerManagement.Core.Services
         {
             return await _customerRepository.GetCustomerByIdAsync(id);
         }
+
+        public async Task<bool> DeleteCustomerAsync(int id)
+        {
+            return await _customerRepository.DeleteCustomerAsync(id);
+        }
     }
 }
 

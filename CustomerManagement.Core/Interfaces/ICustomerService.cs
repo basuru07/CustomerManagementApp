@@ -12,6 +12,7 @@ namespace CustomerManagement.Core.Interfaces
         Task AddCustomerAsync(Customer customer);
         Task <List<Customer>> GetAllCustomersAsync(); // list the all customer
         Task <Customer> GetCustomerByIdAsync(int id);
+        Task <bool> DeleteCustomerAsync (int id);   // delete the customer by id  
 
        
     }

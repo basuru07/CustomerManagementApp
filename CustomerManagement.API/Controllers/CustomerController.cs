@@ -59,5 +59,19 @@ namespace CustomerManagement.API.Controllers
         }
 
 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteCustomer(int id)
+        {
+            var deleted = await _customerService.DeleteCustomerAsync(id);
+
+            if (!deleted)
+                return NotFound($"Customer with ID {id} not found.");
+
+            return Ok($"Customer with ID {id} deleted successfully.");
+        }
+
+
+
+
     }
 }
